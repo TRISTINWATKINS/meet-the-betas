@@ -1,0 +1,1020 @@
+/* ==========================================
+   HOMEPAGE — LIFE IN BETA
+========================================== */
+
+.life-section {
+    background: var(--beta-light-blue);
+}
+
+
+.life-section .section-label {
+    color: var(--beta-sapphire);
+}
+
+
+.life-section h2 {
+    color: var(--beta-deep-blue);
+}
+
+
+.life-section .section-description {
+    color: var(--beta-gunmetal);
+}
+
+
+
+/* ==========================================
+   HOMEPAGE LIFE GRID
+========================================== */
+
+.life-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(12, 1fr);
+
+    gap: 22px;
+
+    margin-top: 55px;
+}
+
+
+.life-card-large {
+    grid-column: span 6;
+}
+
+
+.life-card-small {
+    grid-column: span 4;
+}
+
+
+
+/* ==========================================
+   HOMEPAGE LIFE CARD
+========================================== */
+
+.life-card {
+
+    position: relative;
+
+    min-height: 390px;
+
+    overflow: hidden;
+
+    display: block;
+
+    background:
+        var(--beta-deep-blue);
+
+    text-decoration: none;
+
+    color: var(--white);
+
+    transition:
+        transform 0.3s ease;
+}
+
+
+.life-card:hover {
+
+    transform:
+        translateY(-5px);
+}
+
+
+
+/* ==========================================
+   HOMEPAGE PHOTO PLACEHOLDER
+========================================== */
+
+.life-photo-placeholder {
+
+    position: absolute;
+
+    inset: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--beta-sapphire),
+            var(--beta-deep-blue)
+        );
+
+    font-family:
+        var(--display-font);
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    color:
+        rgba(
+            255,
+            255,
+            255,
+            0.35
+        );
+}
+
+
+
+/* ==========================================
+   HOMEPAGE GRADIENT
+========================================== */
+
+.life-card::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(0, 6, 45, 0.96),
+            rgba(0, 6, 45, 0.05) 70%
+        );
+
+    z-index: 1;
+}
+
+
+
+/* ==========================================
+   HOMEPAGE CARD TEXT
+========================================== */
+
+.life-card-content {
+
+    position: absolute;
+
+    left: 30px;
+
+    right: 30px;
+
+    bottom: 27px;
+
+    z-index: 2;
+}
+
+
+.life-card-number {
+
+    display: block;
+
+    font-family:
+        var(--display-font);
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    color:
+        var(--beta-pink);
+
+    margin-bottom: 8px;
+}
+
+
+.life-card h3 {
+
+    font-family:
+        var(--heading-font);
+
+    font-size: 34px;
+
+    font-weight: normal;
+
+    color: var(--white);
+
+    margin-bottom: 7px;
+}
+
+
+.life-card p {
+
+    max-width: 430px;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    color:
+        rgba(
+            255,
+            255,
+            255,
+            0.75
+        );
+}
+
+
+.life-card-action {
+
+    display: inline-block;
+
+    margin-top: 18px;
+
+    font-family:
+        var(--display-font);
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+
+    color:
+        var(--beta-pink);
+}
+
+
+
+/* ==========================================
+   HOMEPAGE LIFE FOOTER
+========================================== */
+
+.life-footer {
+
+    margin-top: 55px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+
+.life-footer-text {
+
+    max-width: 600px;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    color:
+        var(--beta-gunmetal);
+}
+
+
+.life-instagram-button {
+
+    display: inline-block;
+
+    padding: 14px 25px;
+
+    background:
+        var(--beta-sapphire);
+
+    border:
+        2px solid
+        var(--beta-sapphire);
+
+    color:
+        var(--white);
+
+    font-family:
+        var(--display-font);
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+
+    transition:
+        0.25s ease;
+}
+
+
+.life-instagram-button:hover {
+
+    background:
+        var(--beta-deep-blue);
+
+    border-color:
+        var(--beta-deep-blue);
+}
+
+
+
+/* ==========================================
+   INDIVIDUAL LIFE PAGE HERO
+========================================== */
+
+.life-page-hero {
+
+    min-height:
+        calc(75vh - 80px);
+
+    padding:
+        110px 7%;
+
+    display: flex;
+
+    align-items: center;
+
+    background:
+        var(--beta-deep-blue);
+
+    color:
+        var(--white);
+}
+
+
+.life-page-hero-content {
+
+    max-width: 900px;
+}
+
+
+.life-page-number {
+
+    font-family:
+        var(--display-font);
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    color:
+        var(--beta-pink);
+
+    margin-bottom: 20px;
+}
+
+
+.life-page-hero .section-label {
+
+    color:
+        var(--beta-light-blue);
+}
+
+
+.life-page-hero h1 {
+
+    font-family:
+        var(--heading-font);
+
+    font-size:
+        clamp(
+            70px,
+            10vw,
+            145px
+        );
+
+    font-weight: normal;
+
+    line-height: 0.9;
+
+    color:
+        var(--white);
+
+    margin-bottom: 30px;
+}
+
+
+.life-page-subtitle {
+
+    max-width: 720px;
+
+    font-size: 21px;
+
+    line-height: 1.7;
+
+    color:
+        rgba(
+            255,
+            255,
+            255,
+            0.82
+        );
+
+    margin-bottom: 45px;
+}
+
+
+.life-page-back {
+
+    font-family:
+        var(--display-font);
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+    text-decoration: none;
+
+    color:
+        var(--beta-pink);
+
+    border-bottom:
+        1px solid
+        var(--beta-pink);
+
+    padding-bottom: 5px;
+}
+
+
+
+/* ==========================================
+   LIFE PAGE INTRO
+========================================== */
+
+.life-page-intro {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 100px;
+
+    background:
+        var(--white);
+}
+
+
+.life-page-intro h2 {
+
+    margin-bottom: 0;
+}
+
+
+.life-page-intro-copy {
+
+    display: flex;
+
+    align-items: center;
+}
+
+
+.life-page-intro-copy p {
+
+    font-family:
+        var(--heading-font);
+
+    font-size:
+        clamp(
+            24px,
+            2.4vw,
+            36px
+        );
+
+    line-height: 1.5;
+
+    color:
+        var(--beta-deep-blue);
+}
+
+
+
+/* ==========================================
+   LIFE DETAIL SECTION
+========================================== */
+
+.life-details {
+
+    background:
+        var(--off-white);
+}
+
+
+.life-detail-block {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    min-height: 550px;
+
+    background:
+        var(--white);
+
+    margin-bottom: 45px;
+}
+
+
+.life-detail-block:nth-child(even) {
+
+    direction: rtl;
+}
+
+
+.life-detail-block:nth-child(even) > * {
+
+    direction: ltr;
+}
+
+
+.life-detail-photo {
+
+    min-height: 550px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--beta-sapphire),
+            var(--beta-deep-blue)
+        );
+
+    font-family:
+        var(--display-font);
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    color:
+        rgba(
+            255,
+            255,
+            255,
+            0.4
+        );
+}
+
+
+.life-detail-copy {
+
+    padding: 70px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+
+.life-detail-copy h2 {
+
+    font-size:
+        clamp(
+            38px,
+            4vw,
+            58px
+        );
+
+    margin-bottom: 25px;
+}
+
+
+.life-detail-copy > p:not(.section-label) {
+
+    max-width: 550px;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    color:
+        #5f5f5f;
+}
+
+
+
+/* ==========================================
+   LIFE PAGE PHOTO GALLERY
+========================================== */
+
+.life-page-gallery-section {
+
+    background:
+        var(--beta-light-blue);
+}
+
+
+.life-page-gallery {
+
+    display: grid;
+
+    grid-template-columns:
+        2fr 1fr 1fr;
+
+    gap: 20px;
+}
+
+
+.life-gallery-placeholder {
+
+    min-height: 420px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+        var(--beta-deep-blue);
+
+    font-family:
+        var(--display-font);
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    color:
+        rgba(
+            255,
+            255,
+            255,
+            0.4
+        );
+}
+
+
+
+/* ==========================================
+   EXPLORE MORE
+========================================== */
+
+.life-explore {
+
+    background:
+        var(--white);
+}
+
+
+.life-explore-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    border-top:
+        1px solid
+        var(--beta-timberwolf);
+
+    border-left:
+        1px solid
+        var(--beta-timberwolf);
+}
+
+
+.life-explore-card {
+
+    min-height: 210px;
+
+    padding: 30px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: flex-end;
+
+    text-decoration: none;
+
+    border-right:
+        1px solid
+        var(--beta-timberwolf);
+
+    border-bottom:
+        1px solid
+        var(--beta-timberwolf);
+
+    background:
+        var(--white);
+
+    transition:
+        0.25s ease;
+}
+
+
+.life-explore-card span {
+
+    font-family:
+        var(--display-font);
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    color:
+        var(--beta-pink);
+
+    margin-bottom: auto;
+}
+
+
+.life-explore-card h3 {
+
+    font-family:
+        var(--heading-font);
+
+    font-size: 28px;
+
+    font-weight: normal;
+
+    color:
+        var(--beta-sapphire);
+
+    margin-bottom: 6px;
+}
+
+
+.life-explore-card p {
+
+    font-family:
+        var(--display-font);
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+    color:
+        var(--beta-azure);
+}
+
+
+.life-explore-card:hover {
+
+    background:
+        var(--beta-deep-blue);
+}
+
+
+.life-explore-card:hover h3 {
+
+    color:
+        var(--white);
+}
+
+
+
+/* ==========================================
+   LIFE ERROR
+========================================== */
+
+.life-error {
+
+    min-height:
+        calc(100vh - 80px);
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    gap: 25px;
+}
+
+
+.life-error h1 {
+
+    font-family:
+        var(--heading-font);
+
+    font-size:
+        clamp(
+            45px,
+            7vw,
+            80px
+        );
+
+    color:
+        var(--beta-sapphire);
+}
+
+
+.life-page-button {
+
+    padding: 14px 24px;
+
+    text-decoration: none;
+
+    background:
+        var(--beta-sapphire);
+
+    color:
+        var(--white);
+
+    font-family:
+        var(--display-font);
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 1000px) {
+
+    .life-card-large,
+    .life-card-small {
+
+        grid-column:
+            span 6;
+    }
+
+
+    .life-page-intro {
+
+        gap: 50px;
+    }
+
+
+    .life-detail-copy {
+
+        padding: 50px;
+    }
+
+
+    .life-page-gallery {
+
+        grid-template-columns:
+            1fr 1fr;
+    }
+
+
+    .life-gallery-placeholder:first-child {
+
+        grid-column:
+            span 2;
+    }
+
+
+    .life-explore-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+
+/* ==========================================
+   PHONE
+========================================== */
+
+@media (max-width: 650px) {
+
+    .life-grid {
+
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .life-card-large,
+    .life-card-small {
+
+        grid-column: auto;
+    }
+
+
+    .life-card {
+
+        min-height: 360px;
+    }
+
+
+    .life-footer {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .life-page-hero {
+
+        min-height:
+            calc(100vh - 70px);
+
+        padding:
+            80px 24px;
+    }
+
+
+    .life-page-intro {
+
+        grid-template-columns:
+            1fr;
+
+        gap: 40px;
+    }
+
+
+    .life-detail-block {
+
+        grid-template-columns:
+            1fr;
+
+        min-height: auto;
+    }
+
+
+    .life-detail-block:nth-child(even) {
+
+        direction: ltr;
+    }
+
+
+    .life-detail-photo {
+
+        min-height: 400px;
+    }
+
+
+    .life-detail-copy {
+
+        padding:
+            50px 30px;
+    }
+
+
+    .life-page-gallery {
+
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .life-gallery-placeholder:first-child {
+
+        grid-column: auto;
+    }
+
+
+    .life-gallery-placeholder {
+
+        min-height: 350px;
+    }
+
+
+    .life-explore-grid {
+
+        grid-template-columns:
+            1fr;
+    }
+
+}

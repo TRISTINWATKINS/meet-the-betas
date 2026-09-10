@@ -1,0 +1,1754 @@
+/* ==========================================
+   BETA THETA PI DESIGN SYSTEM
+========================================== */
+
+:root {
+
+    --beta-pink: #F99FC9;
+
+    --beta-light-blue: #ABCAE9;
+
+    --beta-azure: #006DC8;
+
+    --beta-sapphire: #003287;
+
+    --beta-deep-blue: #00062D;
+
+    --beta-gunmetal: #333333;
+
+    --beta-silver: #BCBCBC;
+
+    --beta-timberwolf: #D9D9D6;
+
+    --white: #FFFFFF;
+
+    --off-white: #F7F8FA;
+
+
+    --heading-font:
+        "Friz Quadrata",
+        Georgia,
+        "Times New Roman",
+        serif;
+
+
+    --display-font:
+        "Gotham",
+        "Helvetica Neue",
+        Arial,
+        sans-serif;
+
+
+    --body-font:
+        "Helvetica Neue",
+        Helvetica,
+        Arial,
+        sans-serif;
+}
+
+
+
+/* ==========================================
+   RESET
+========================================== */
+
+* {
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: var(--body-font);
+
+    background: var(--white);
+
+    color: var(--beta-gunmetal);
+
+    line-height: 1.6;
+}
+
+
+
+/* ==========================================
+   NAVIGATION
+========================================== */
+
+nav {
+
+    height: 80px;
+
+    padding: 0 5%;
+
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+
+    background: var(--white);
+
+
+    border-bottom:
+        1px solid rgba(0, 0, 0, 0.08);
+
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+}
+
+
+.logo {
+
+    font-family: var(--heading-font);
+
+    font-size: 22px;
+
+    color: var(--beta-sapphire);
+
+    text-decoration: none;
+
+    letter-spacing: 1px;
+}
+
+
+.nav-links {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 36px;
+}
+
+
+.nav-links a {
+
+    position: relative;
+
+
+    font-family: var(--display-font);
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+
+    letter-spacing: 0.5px;
+
+    text-transform: uppercase;
+
+
+    color: #111111;
+
+    text-decoration: none;
+
+
+    padding: 8px 0;
+}
+
+
+.nav-links a::after {
+
+    content: "";
+
+
+    position: absolute;
+
+
+    left: 0;
+
+    bottom: 0;
+
+
+    width: 0;
+
+    height: 2px;
+
+
+    background: var(--beta-pink);
+
+
+    transition: width 0.25s ease;
+}
+
+
+.nav-links a:hover::after {
+
+    width: 100%;
+}
+
+
+
+/* ==========================================
+   HERO
+========================================== */
+
+.hero {
+
+    min-height: calc(100vh - 80px);
+
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+
+    text-align: center;
+
+
+    padding: 70px 20px;
+
+
+    background: var(--beta-deep-blue);
+
+
+    color: var(--white);
+}
+
+
+.hero-content {
+
+    max-width: 1000px;
+}
+
+
+.hero-small-text {
+
+    font-family: var(--display-font);
+
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+
+
+    color: var(--beta-light-blue);
+
+
+    margin-bottom: 25px;
+}
+
+
+.hero h1 {
+
+    font-family: var(--heading-font);
+
+
+    font-size: clamp(
+        65px,
+        9vw,
+        120px
+    );
+
+
+    font-weight: normal;
+
+
+    line-height: 0.88;
+
+
+    letter-spacing: -2px;
+
+
+    margin-bottom: 35px;
+}
+
+
+.hero-description {
+
+    font-size: 21px;
+
+
+    font-weight: 300;
+
+
+    color:
+        rgba(
+            255,
+            255,
+            255,
+            0.9
+        );
+
+
+    margin-bottom: 40px;
+}
+
+
+
+/* ==========================================
+   HERO BUTTON
+========================================== */
+
+.hero-button {
+
+    display: inline-block;
+
+
+    padding: 15px 30px;
+
+
+    border: 2px solid var(--white);
+
+
+    color: var(--white);
+
+
+    background: transparent;
+
+
+    font-family: var(--display-font);
+
+
+    font-size: 12px;
+
+
+    font-weight: 700;
+
+
+    letter-spacing: 1px;
+
+
+    text-transform: uppercase;
+
+
+    text-decoration: none;
+
+
+    transition: 0.25s ease;
+}
+
+
+.hero-button:hover {
+
+    background: var(--white);
+
+    color: var(--beta-sapphire);
+}
+
+
+
+/* ==========================================
+   GENERAL SECTIONS
+========================================== */
+
+section {
+
+    padding: 105px 7%;
+}
+
+
+.section-heading {
+
+    max-width: 760px;
+
+    margin-bottom: 60px;
+}
+
+
+.section-label {
+
+    font-family: var(--display-font);
+
+
+    font-size: 12px;
+
+
+    font-weight: 700;
+
+
+    letter-spacing: 3px;
+
+
+    text-transform: uppercase;
+
+
+    color: var(--beta-azure);
+
+
+    margin-bottom: 12px;
+}
+
+
+section h2 {
+
+    font-family: var(--heading-font);
+
+
+    font-size: clamp(
+        44px,
+        5vw,
+        68px
+    );
+
+
+    font-weight: normal;
+
+
+    color: var(--beta-sapphire);
+
+
+    margin-bottom: 18px;
+}
+
+
+.section-description {
+
+    max-width: 720px;
+
+
+    font-size: 18px;
+
+
+    line-height: 1.7;
+
+
+    color: #555555;
+}
+
+
+
+/* ==========================================
+   INTEREST SECTION
+========================================== */
+
+.interests-section {
+
+    background: var(--white);
+}
+
+
+.interest-grid {
+
+    display: grid;
+
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+
+    border-top:
+        1px solid var(--beta-timberwolf);
+
+
+    border-left:
+        1px solid var(--beta-timberwolf);
+}
+
+
+
+/* ==========================================
+   INTEREST CARD
+========================================== */
+
+.interest-card {
+
+    min-height: 280px;
+
+
+    padding: 38px;
+
+
+    display: flex;
+
+
+    flex-direction: column;
+
+
+    position: relative;
+
+
+    text-decoration: none;
+
+
+    background: var(--white);
+
+
+    border-right:
+        1px solid var(--beta-timberwolf);
+
+
+    border-bottom:
+        1px solid var(--beta-timberwolf);
+
+
+    transition:
+        background 0.3s ease;
+}
+
+
+.interest-number {
+
+    font-family: var(--display-font);
+
+
+    font-size: 11px;
+
+
+    font-weight: 700;
+
+
+    letter-spacing: 2px;
+
+
+    color: var(--beta-pink);
+
+
+    margin-bottom: 50px;
+}
+
+
+.interest-card h3 {
+
+    font-family: var(--heading-font);
+
+
+    font-size: 32px;
+
+
+    font-weight: normal;
+
+
+    color: var(--beta-sapphire);
+
+
+    margin-bottom: 10px;
+}
+
+
+.interest-card p {
+
+    font-size: 14px;
+
+
+    line-height: 1.6;
+
+
+    color: #707070;
+
+
+    max-width: 240px;
+}
+
+
+.interest-arrow {
+
+    position: absolute;
+
+
+    right: 35px;
+
+    bottom: 30px;
+
+
+    font-size: 25px;
+
+
+    color: var(--beta-sapphire);
+
+
+    transition:
+        transform 0.25s ease;
+}
+
+
+.interest-card:hover {
+
+    background: var(--beta-deep-blue);
+}
+
+
+.interest-card:hover h3 {
+
+    color: var(--white);
+}
+
+
+.interest-card:hover p {
+
+    color:
+        rgba(
+            255,
+            255,
+            255,
+            0.72
+        );
+}
+
+
+.interest-card:hover .interest-arrow {
+
+    color: var(--beta-pink);
+
+
+    transform: translateX(7px);
+}
+
+
+
+/* ==========================================
+   BROTHERS SECTION
+========================================== */
+
+.brothers-section {
+
+    background: var(--off-white);
+}
+
+
+.brother-grid {
+
+    display: grid;
+
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+
+    gap: 24px;
+}
+
+
+
+/* ==========================================
+   BROTHER CARD
+========================================== */
+
+.brother-card {
+
+    display: block;
+
+
+    text-decoration: none;
+
+
+    color: inherit;
+}
+
+
+.brother-image {
+
+    width: 100%;
+
+
+    aspect-ratio: 4 / 5;
+
+
+    overflow: hidden;
+
+
+    background: var(--beta-timberwolf);
+}
+
+
+.brother-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+
+    display: block;
+
+
+    object-fit: cover;
+
+
+    transition:
+        transform 0.4s ease;
+}
+
+
+.brother-card:hover
+.brother-image img {
+
+    transform: scale(1.035);
+}
+
+
+.photo-placeholder {
+
+    width: 100%;
+
+    height: 100%;
+
+
+    display: flex;
+
+
+    align-items: center;
+
+    justify-content: center;
+
+
+    font-family: var(--display-font);
+
+
+    font-size: 11px;
+
+
+    font-weight: 700;
+
+
+    letter-spacing: 3px;
+
+
+    color: #888888;
+}
+
+
+
+/* ==========================================
+   BROTHER INFO
+========================================== */
+
+.brother-info {
+
+    padding-top: 18px;
+}
+
+
+.brother-info h3 {
+
+    font-family: var(--heading-font);
+
+
+    font-size: 25px;
+
+
+    font-weight: normal;
+
+
+    color: var(--beta-sapphire);
+
+
+    margin-bottom: 2px;
+}
+
+
+.brother-details {
+
+    font-size: 12px;
+
+
+    color: #777777;
+
+
+    margin-bottom: 12px;
+}
+
+
+
+/* ==========================================
+   BROTHER TAGS
+========================================== */
+
+.brother-tags {
+
+    display: flex;
+
+
+    flex-wrap: wrap;
+
+
+    gap: 7px;
+}
+
+
+.brother-tags span {
+
+    padding: 5px 10px;
+
+
+    border:
+        1px solid var(--beta-light-blue);
+
+
+    font-family: var(--display-font);
+
+
+    font-size: 10px;
+
+
+    font-weight: 600;
+
+
+    letter-spacing: 0.5px;
+
+
+    text-transform: uppercase;
+
+
+    color: var(--beta-sapphire);
+
+
+    background: var(--white);
+}
+
+
+
+/* ==========================================
+   VIEW ALL BROTHERS
+========================================== */
+
+.brothers-footer {
+
+    margin-top: 55px;
+}
+
+
+.text-link {
+
+    display: inline-flex;
+
+
+    align-items: center;
+
+
+    gap: 15px;
+
+
+    font-family: var(--display-font);
+
+
+    font-size: 12px;
+
+
+    font-weight: 700;
+
+
+    letter-spacing: 1px;
+
+
+    text-transform: uppercase;
+
+
+    text-decoration: none;
+
+
+    color: var(--beta-sapphire);
+
+
+    border-bottom:
+        2px solid var(--beta-pink);
+
+
+    padding-bottom: 5px;
+}
+
+
+.text-link span {
+
+    font-size: 20px;
+
+
+    transition:
+        transform 0.25s ease;
+}
+
+
+.text-link:hover span {
+
+    transform: translateX(6px);
+}
+
+
+
+/* ==========================================
+   EXECUTIVE BOARD
+========================================== */
+
+#executive-board {
+
+    background: var(--white);
+}
+
+
+
+/* ==========================================
+   LIFE IN BETA
+========================================== */
+
+#life {
+
+    background: var(--beta-light-blue);
+}
+
+
+#life h2 {
+
+    color: var(--beta-deep-blue);
+}
+
+
+#life .section-description {
+
+    color: var(--beta-gunmetal);
+}
+
+
+
+/* ==========================================
+   RUSH
+========================================== */
+
+#rush {
+
+    background: var(--beta-deep-blue);
+
+
+    border-top:
+        8px solid var(--beta-pink);
+}
+
+
+#rush h2 {
+
+    color: var(--white);
+}
+
+
+#rush .section-description {
+
+    color:
+        rgba(
+            255,
+            255,
+            255,
+            0.8
+        );
+}
+
+
+.rush-label {
+
+    color: var(--beta-pink);
+}
+
+
+
+/* ==========================================
+   BROTHERS PAGE HEADER
+========================================== */
+
+.page-header {
+
+    padding:
+        100px 7%
+        70px;
+
+
+    background: var(--white);
+}
+
+
+.page-header h1 {
+
+    font-family: var(--heading-font);
+
+
+    font-size: clamp(
+        55px,
+        7vw,
+        95px
+    );
+
+
+    font-weight: normal;
+
+
+    color: var(--beta-sapphire);
+
+
+    line-height: 1;
+
+
+    margin-bottom: 25px;
+}
+
+
+.page-header p:not(.section-label) {
+
+    max-width: 700px;
+
+
+    font-size: 18px;
+
+
+    color: #5b5b5b;
+
+
+    line-height: 1.7;
+}
+
+
+
+/* ==========================================
+   BROTHERS DIRECTORY
+========================================== */
+
+.brothers-directory {
+
+    padding-top: 45px;
+
+
+    background: var(--off-white);
+
+
+    min-height: 70vh;
+}
+
+
+
+/* ==========================================
+   DIRECTORY FILTERS
+========================================== */
+
+.directory-controls {
+
+    margin-bottom: 50px;
+
+
+    padding-bottom: 25px;
+
+
+    border-bottom:
+        1px solid var(--beta-timberwolf);
+}
+
+
+.filter-buttons {
+
+    display: flex;
+
+
+    flex-wrap: wrap;
+
+
+    gap: 10px;
+}
+
+
+.filter-button {
+
+    padding: 10px 18px;
+
+
+    background: transparent;
+
+
+    border:
+        1px solid var(--beta-light-blue);
+
+
+    color: var(--beta-sapphire);
+
+
+    font-family: var(--display-font);
+
+
+    font-size: 11px;
+
+
+    font-weight: 700;
+
+
+    letter-spacing: 1px;
+
+
+    text-transform: uppercase;
+
+
+    cursor: pointer;
+
+
+    transition: 0.2s ease;
+}
+
+
+.filter-button:hover {
+
+    background: var(--beta-light-blue);
+}
+
+
+.filter-button.active {
+
+    background: var(--beta-sapphire);
+
+
+    border-color: var(--beta-sapphire);
+
+
+    color: var(--white);
+}
+
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 1000px) {
+
+    .interest-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .brother-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 800px) {
+
+    nav {
+
+        height: 70px;
+
+
+        padding: 0 22px;
+    }
+
+
+    .logo {
+
+        font-size: 18px;
+    }
+
+
+    .nav-links {
+
+        display: none;
+    }
+
+
+    .hero {
+
+        min-height:
+            calc(100vh - 70px);
+
+
+        padding:
+            60px 24px;
+    }
+
+
+    section {
+
+        padding:
+            75px 24px;
+    }
+
+
+    .page-header {
+
+        padding:
+            70px 24px
+            50px;
+    }
+
+}
+
+
+
+@media (max-width: 600px) {
+
+    .interest-grid {
+
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .interest-card {
+
+        min-height: 230px;
+    }
+
+
+    .brother-grid {
+
+        grid-template-columns:
+            1fr;
+
+
+        gap: 45px;
+    }
+
+
+    .filter-buttons {
+
+        gap: 7px;
+    }
+
+
+    .filter-button {
+
+        padding:
+            8px 12px;
+
+
+        font-size: 10px;
+    }
+
+}
+
+/* ==========================================
+   INDIVIDUAL PROFILE
+========================================== */
+
+.profile-hero {
+
+    min-height:
+        calc(100vh - 80px);
+
+    display: grid;
+
+    grid-template-columns:
+        45% 55%;
+
+    padding: 0;
+
+    background:
+        var(--beta-deep-blue);
+}
+
+
+.profile-main-photo {
+
+    min-height:
+        calc(100vh - 80px);
+
+    overflow: hidden;
+
+    background:
+        var(--beta-timberwolf);
+}
+
+
+.profile-main-photo img {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center top;
+}
+
+
+.profile-intro {
+
+    padding: 9%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+
+.profile-intro .section-label {
+
+    color:
+        var(--beta-light-blue);
+}
+
+
+.profile-intro h1 {
+
+    font-family:
+        var(--heading-font);
+
+    font-size:
+        clamp(
+            60px,
+            7vw,
+            105px
+        );
+
+    font-weight: normal;
+
+    line-height: 0.95;
+
+    color: var(--white);
+
+    margin-bottom: 25px;
+}
+
+
+.profile-degree {
+
+    font-family:
+        var(--display-font);
+
+    font-size: 15px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1.5px;
+
+    color:
+        rgba(
+            255,
+            255,
+            255,
+            0.75
+        );
+
+    margin-bottom: 28px;
+}
+
+
+.profile-tags {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-bottom: 55px;
+}
+
+
+.profile-tags span {
+
+    padding:
+        9px 15px;
+
+    border:
+        1px solid
+        var(--beta-light-blue);
+
+    font-family:
+        var(--display-font);
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+    color: var(--white);
+}
+
+
+.profile-back {
+
+    width: fit-content;
+
+    font-family:
+        var(--display-font);
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+    text-decoration: none;
+
+    color:
+        var(--beta-pink);
+
+    border-bottom:
+        1px solid
+        var(--beta-pink);
+
+    padding-bottom: 5px;
+}
+
+
+
+/* ==========================================
+   PROFILE ABOUT
+========================================== */
+
+.profile-about {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 100px;
+
+    background:
+        var(--white);
+}
+
+
+.profile-about h2 {
+
+    margin-bottom: 0;
+}
+
+
+.profile-about-copy {
+
+    display: flex;
+
+    align-items: center;
+}
+
+
+.profile-about-copy p {
+
+    font-family:
+        var(--heading-font);
+
+    font-size:
+        clamp(
+            24px,
+            2.5vw,
+            37px
+        );
+
+    line-height: 1.5;
+
+    color:
+        var(--beta-deep-blue);
+}
+
+
+
+/* ==========================================
+   PROFILE GALLERY
+========================================== */
+
+.profile-interests {
+
+    background:
+        var(--off-white);
+}
+
+
+.profile-gallery {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+
+.profile-gallery-card {
+
+    background:
+        var(--white);
+}
+
+
+.profile-gallery-card img {
+
+    width: 100%;
+
+    height: 600px;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+.profile-gallery-info {
+
+    padding: 30px;
+}
+
+
+.profile-gallery-info h3 {
+
+    font-family:
+        var(--heading-font);
+
+    font-size: 31px;
+
+    font-weight: normal;
+
+    color:
+        var(--beta-sapphire);
+
+    margin-bottom: 10px;
+}
+
+
+.profile-gallery-info p {
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    color: #666666;
+
+    max-width: 500px;
+}
+
+
+/* ==========================================
+   MOBILE PROFILE
+========================================== */
+
+@media (max-width: 800px) {
+
+    .profile-hero {
+
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .profile-main-photo {
+
+        min-height: auto;
+
+        height: 65vh;
+    }
+
+
+    .profile-intro {
+
+        padding:
+            70px 24px;
+    }
+
+
+    .profile-about {
+
+        grid-template-columns:
+            1fr;
+
+        gap: 40px;
+    }
+
+
+    .profile-gallery {
+
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .profile-gallery-card img {
+
+        height: 500px;
+    }
+
+}
+
+/* ==========================================
+   EXECUTIVE BOARD
+========================================== */
+
+.exec-section {
+    background: var(--white);
+}
+
+.exec-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 28px;
+    width: 100%;
+}
+
+.exec-card {
+    background: var(--off-white);
+    border-top: 4px solid var(--beta-pink);
+}
+
+.exec-photo-placeholder {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--beta-timberwolf);
+
+    font-family: var(--display-font);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+
+    color: #888888;
+}
+
+.exec-info {
+    padding: 24px;
+}
+
+.exec-role {
+    font-family: var(--display-font);
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: var(--beta-azure);
+
+    margin-bottom: 8px;
+}
+
+.exec-info h3 {
+    font-family: var(--heading-font);
+
+    font-size: 27px;
+    font-weight: normal;
+
+    color: var(--beta-sapphire);
+
+    margin-bottom: 12px;
+}
+
+.exec-description {
+    font-size: 14px;
+    line-height: 1.7;
+
+    color: #666666;
+}
+
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+
+    .exec-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* PHONE */
+
+@media (max-width: 600px) {
+
+    .exec-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* ==========================================
+   EXECUTIVE BOARD HOMEPAGE PREVIEW
+========================================== */
+
+.exec-preview {
+    background: var(--white);
+}
+
+.exec-preview-button {
+    background: var(--beta-sapphire);
+    border-color: var(--beta-sapphire);
+    color: var(--white);
+}
+
+.exec-preview-button:hover {
+    background: var(--beta-deep-blue);
+    border-color: var(--beta-deep-blue);
+    color: var(--white);
+}
+
+/* ==========================================
+   BROTHERS HOMEPAGE PREVIEW
+========================================== */
+
+.brothers-preview {
+    background: var(--off-white);
+}
+
+
+.brothers-preview-button {
+    background: var(--beta-sapphire);
+
+    border-color: var(--beta-sapphire);
+
+    color: var(--white);
+}
+
+
+.brothers-preview-button:hover {
+    background: var(--beta-deep-blue);
+
+    border-color: var(--beta-deep-blue);
+
+    color: var(--white);
+}
+
+/* ==========================================
+   RUSH HOMEPAGE PREVIEW
+========================================== */
+
+.rush-preview {
+    background: var(--beta-deep-blue);
+    border-top: 8px solid var(--beta-pink);
+}
+
+
+.rush-preview h2 {
+    color: var(--white);
+}
+
+
+.rush-preview .section-description {
+    color: rgba(
+        255,
+        255,
+        255,
+        0.8
+    );
+}
+
+
+.rush-preview .hero-button:hover {
+    background: var(--white);
+    color: var(--beta-sapphire);
+}

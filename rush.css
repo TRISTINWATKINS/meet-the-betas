@@ -1,0 +1,635 @@
+/* ==========================================
+   RUSH PAGE HERO
+========================================== */
+
+.rush-page-hero {
+    min-height: calc(100vh - 80px);
+
+    display: flex;
+    align-items: center;
+
+    padding: 100px 7%;
+
+    background: var(--beta-deep-blue);
+
+    color: var(--white);
+}
+
+
+.rush-page-hero-content {
+    max-width: 950px;
+}
+
+
+.rush-page-hero .section-label {
+    color: var(--beta-pink);
+}
+
+
+.rush-page-hero h1 {
+    font-family: var(--heading-font);
+
+    font-size: clamp(
+        75px,
+        10vw,
+        145px
+    );
+
+    font-weight: normal;
+
+    line-height: 0.88;
+
+    color: var(--white);
+
+    margin-bottom: 35px;
+}
+
+
+.rush-page-hero-text {
+    max-width: 700px;
+
+    font-size: 20px;
+
+    line-height: 1.7;
+
+    color: rgba(
+        255,
+        255,
+        255,
+        0.82
+    );
+
+    margin-bottom: 40px;
+}
+
+
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.rush-primary-button {
+    display: inline-block;
+
+    padding: 15px 28px;
+
+    background: var(--beta-pink);
+
+    border: 2px solid var(--beta-pink);
+
+    color: var(--beta-deep-blue);
+
+    font-family: var(--display-font);
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+    text-decoration: none;
+
+    transition: 0.25s ease;
+}
+
+
+.rush-primary-button:hover {
+    background: var(--white);
+
+    border-color: var(--white);
+}
+
+
+.rush-secondary-button {
+    display: inline-block;
+
+    padding: 15px 28px;
+
+    border: 2px solid var(--white);
+
+    color: var(--white);
+
+    font-family: var(--display-font);
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+    text-decoration: none;
+
+    transition: 0.25s ease;
+}
+
+
+.rush-secondary-button:hover {
+    background: var(--white);
+
+    color: var(--beta-deep-blue);
+}
+
+
+
+/* ==========================================
+   WHY BETA
+========================================== */
+
+.rush-intro {
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 100px;
+
+    background: var(--white);
+}
+
+
+.rush-intro h2 {
+    margin-bottom: 0;
+}
+
+
+.rush-intro-copy {
+    display: flex;
+
+    align-items: center;
+}
+
+
+.rush-intro-copy p {
+    font-family: var(--heading-font);
+
+    font-size: clamp(
+        24px,
+        2.5vw,
+        37px
+    );
+
+    line-height: 1.5;
+
+    color: var(--beta-deep-blue);
+}
+
+
+
+/* ==========================================
+   WHAT TO EXPECT
+========================================== */
+
+.rush-expect {
+    background: var(--off-white);
+}
+
+
+.rush-expect-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    border-top:
+        1px solid
+        var(--beta-timberwolf);
+
+    border-left:
+        1px solid
+        var(--beta-timberwolf);
+}
+
+
+.rush-expect-card {
+    min-height: 330px;
+
+    padding: 35px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    border-right:
+        1px solid
+        var(--beta-timberwolf);
+
+    border-bottom:
+        1px solid
+        var(--beta-timberwolf);
+
+    background: var(--white);
+}
+
+
+.rush-expect-card > span {
+    font-family: var(--display-font);
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    color: var(--beta-pink);
+
+    margin-bottom: auto;
+}
+
+
+.rush-expect-card h3 {
+    font-family: var(--heading-font);
+
+    font-size: 30px;
+
+    font-weight: normal;
+
+    color: var(--beta-sapphire);
+
+    margin-bottom: 12px;
+}
+
+
+.rush-expect-card p {
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    color: #666666;
+}
+
+
+
+/* ==========================================
+   RUSH EVENTS
+========================================== */
+
+.rush-events {
+    background: var(--white);
+}
+
+
+.rush-events-grid {
+    border-top:
+        1px solid
+        var(--beta-timberwolf);
+}
+
+
+.rush-event {
+    display: grid;
+
+    grid-template-columns:
+        170px 1fr;
+
+    align-items: center;
+
+    min-height: 170px;
+
+    border-bottom:
+        1px solid
+        var(--beta-timberwolf);
+}
+
+
+.rush-event-date {
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    height: 100%;
+
+    padding-right: 30px;
+
+    border-right:
+        1px solid
+        var(--beta-timberwolf);
+}
+
+
+.rush-event-day {
+    font-family: var(--display-font);
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    color: var(--beta-pink);
+}
+
+
+.rush-event-number {
+    font-family: var(--heading-font);
+
+    font-size: 55px;
+
+    line-height: 1;
+
+    color: var(--beta-sapphire);
+}
+
+
+.rush-event-info {
+    padding: 30px 45px;
+}
+
+
+.rush-event-label {
+    font-family: var(--display-font);
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    color: var(--beta-azure);
+
+    margin-bottom: 6px;
+}
+
+
+.rush-event-info h3 {
+    font-family: var(--heading-font);
+
+    font-size: 30px;
+
+    font-weight: normal;
+
+    color: var(--beta-deep-blue);
+
+    margin-bottom: 4px;
+}
+
+
+.rush-event-info > p:not(.rush-event-label) {
+    font-size: 14px;
+
+    color: #777777;
+}
+
+
+
+/* ==========================================
+   RUSH EXPLORE
+========================================== */
+
+.rush-explore {
+    background: var(--beta-light-blue);
+}
+
+
+.rush-explore-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+.rush-explore-card {
+    min-height: 310px;
+
+    padding: 35px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    text-decoration: none;
+
+    background: var(--white);
+
+    transition: 0.25s ease;
+}
+
+
+.rush-explore-card > span {
+    font-family: var(--display-font);
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    color: var(--beta-pink);
+
+    margin-bottom: auto;
+}
+
+
+.rush-explore-card h3 {
+    font-family: var(--heading-font);
+
+    font-size: 31px;
+
+    font-weight: normal;
+
+    color: var(--beta-sapphire);
+
+    margin-bottom: 10px;
+}
+
+
+.rush-explore-card p {
+    max-width: 300px;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    color: #666666;
+
+    margin-bottom: 20px;
+}
+
+
+.rush-explore-card strong {
+    font-family: var(--display-font);
+
+    font-size: 10px;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+    color: var(--beta-azure);
+}
+
+
+.rush-explore-card:hover {
+    transform: translateY(-5px);
+
+    background: var(--beta-deep-blue);
+}
+
+
+.rush-explore-card:hover h3,
+.rush-explore-card:hover p {
+    color: var(--white);
+}
+
+
+.rush-explore-card:hover strong {
+    color: var(--beta-pink);
+}
+
+
+
+/* ==========================================
+   FINAL CTA
+========================================== */
+
+.rush-final {
+    min-height: 600px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    background: var(--beta-deep-blue);
+
+    border-top:
+        8px solid
+        var(--beta-pink);
+}
+
+
+.rush-final-content {
+    max-width: 850px;
+}
+
+
+.rush-final .section-label {
+    color: var(--beta-pink);
+}
+
+
+.rush-final h2 {
+    font-size: clamp(
+        55px,
+        7vw,
+        95px
+    );
+
+    color: var(--white);
+}
+
+
+.rush-final-content > p:not(.section-label) {
+    max-width: 600px;
+
+    margin:
+        0 auto 35px;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    color: rgba(
+        255,
+        255,
+        255,
+        0.78
+    );
+}
+
+
+.rush-final-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 1000px) {
+
+    .rush-expect-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .rush-explore-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+}
+
+
+
+/* ==========================================
+   PHONE
+========================================== */
+
+@media (max-width: 650px) {
+
+    .rush-page-hero {
+        min-height:
+            calc(100vh - 70px);
+
+        padding:
+            80px 24px;
+    }
+
+
+    .rush-intro {
+        grid-template-columns:
+            1fr;
+
+        gap: 40px;
+    }
+
+
+    .rush-expect-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .rush-event {
+        grid-template-columns:
+            90px 1fr;
+    }
+
+
+    .rush-event-info {
+        padding:
+            25px 20px;
+    }
+
+
+    .rush-event-number {
+        font-size: 40px;
+    }
+
+
+    .rush-final {
+        min-height: 550px;
+    }
+
+}
