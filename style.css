@@ -1752,3 +1752,125 @@ section h2 {
     background: var(--white);
     color: var(--beta-sapphire);
 }
+
+/* ==========================================
+   FINAL NAVIGATION UPDATE
+========================================== */
+
+.nav-links {
+    gap: 20px;
+}
+
+
+.nav-links a {
+    font-size: 11px;
+}
+
+
+
+/* ==========================================
+   SWEETHEARTS HOMEPAGE PREVIEW
+========================================== */
+
+.sweethearts-preview {
+    background:
+        var(--beta-light-blue);
+}
+
+
+.sweethearts-preview
+.section-label {
+    color:
+        var(--beta-sapphire);
+}
+
+
+.sweethearts-preview h2 {
+    color:
+        var(--beta-deep-blue);
+}
+
+
+.sweethearts-preview
+.section-description {
+    color:
+        var(--beta-gunmetal);
+}
+
+
+.sweethearts-preview-button {
+    background:
+        var(--beta-sapphire);
+
+    border-color:
+        var(--beta-sapphire);
+
+    color:
+        var(--white);
+}
+
+
+.sweethearts-preview-button:hover {
+    background:
+        var(--beta-deep-blue);
+
+    border-color:
+        var(--beta-deep-blue);
+
+    color:
+        var(--white);
+}
+
+
+
+/* ==========================================
+   ADVISORS HOMEPAGE PREVIEW
+========================================== */
+
+.advisors-preview {
+    background:
+        var(--white);
+}
+
+
+.advisors-preview-button {
+    background:
+        var(--beta-sapphire);
+
+    border-color:
+        var(--beta-sapphire);
+
+    color:
+        var(--white);
+}
+
+
+.advisors-preview-button:hover {
+    background:
+        var(--beta-deep-blue);
+
+    border-color:
+        var(--beta-deep-blue);
+
+    color:
+        var(--white);
+}
+
+
+
+/* ==========================================
+   NAVBAR RESPONSIVE SAFETY
+========================================== */
+
+@media (max-width: 1150px) {
+
+    .nav-links {
+        gap: 13px;
+    }
+
+
+    .nav-links a {
+        font-size: 10px;
+    }
+
+}
