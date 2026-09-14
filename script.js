@@ -4,14 +4,18 @@
 
 const brothers = [
 
+    /* ======================================
+       TRISTIN WATKINS
+    ====================================== */
+
     {
         id: "tristin-watkins",
 
         name: "Tristin Watkins",
 
-        year: "Senior",
+        year: "Senior (2027)",
 
-        major: "Computer Science",
+        major: "Computer Science and Cyber Security",
 
         interests: [
             "Skiing",
@@ -28,7 +32,7 @@ const brothers = [
         instagram: "",
 
         bio:
-            "Computer Science student with interests in skiing, DJing, gaming, technology, and creating new experiences with friends.",
+            "Whats Good, Im Tristin, You can catch me on the slopes or behind the decks. I Skied my whole life so if you need someone to go to Bogus with, I got you. Im always down to talk about life in the PNW as I grew up in the Seattle area of Washington.",
 
         photo:
             "images/brothers/tristin watkins/profile.jpeg",
@@ -43,7 +47,7 @@ const brothers = [
                     "Skiing",
 
                 description:
-                    "Skiing is one of my favorite ways to get outside, spend time with friends, and enjoy the winter."
+                    "Skiing is one of my favorite ways to get outside, I Skied competitive for 12 years through grade school in the PNW for White Pass WA."
             },
 
             {
@@ -54,99 +58,128 @@ const brothers = [
                     "DJ",
 
                 description:
-                    "Music and DJing are a big part of what I enjoy doing both inside and outside of Beta."
+                    "Music and DJing are a big part of what I enjoy doing both inside and outside of Beta. I remix and produce music in my free time and love to play music for others."
             }
 
         ]
     },
 
 
+    /* ======================================
+       DYLAN SCHUFF
+    ====================================== */
+
     {
-        id: "brother-two",
+        id: "dylan-schuff",
 
-        name: "Brother Two",
+        name: "Dylan Schuff",
 
-        year: "Junior",
+        year: "Junior (2028)",
 
-        major: "Business",
+        major: "Sports Media and Communications",
+
+        interests: [
+            "Mountain Biking",
+            "Snowboarding",
+            "Baseball"
+        ],
+
+        categories: [
+            "Sports",
+            "Outdoors"
+        ],
+
+        instagram: "",
+
+        bio:
+            "I love spending my weekends racing downhill mountain bikes and snowboarding in the winter. I'm always down to talk about baseball and how rough it is being a San Diego fan!",
+
+        photo:
+            "images/brothers/dylan-schuff/profile.jpg",
+
+        photos: [
+
+            {
+                src:
+                    "images/brothers/dylan-schuff/biking.jpg",
+
+                title:
+                    "Mountain Biking",
+
+                description:
+                    "I love spending my weekends racing downhill mountain bikes and getting outside whenever I can."
+            },
+
+            {
+                src:
+                    "images/brothers/dylan-schuff/baseball.jpg",
+
+                title:
+                    "Baseball",
+
+                description:
+                    "I'm always down to talk about baseball, even when being a San Diego fan makes it rough."
+            }
+
+        ]
+    },
+
+     /* ======================================
+       AIDAN BROUGHTON
+    ====================================== */
+
+    {
+        id: "aidan-broughton",
+
+        name: "Aidan Broughton",
+
+        year: "Junior (2028)",
+
+        major: "Finance with Minor in Information Technology Business Analytics",
 
         interests: [
             "Golf",
-            "Fitness"
+            "Fishing"
         ],
 
         categories: [
             "Golf",
-            "Fitness",
-            "Sports"
+            "Outdoors"
         ],
 
         instagram: "",
 
-        bio: "",
+        bio:
+            "My name is Aidan Broughton and I'm a Junior from Oregon. I have a passion for helping people and the outdoors. You can catch me on the weekends watching football or golfing.",
 
-        photo: "",
+        photo:
+            "images/brothers/aidan-broughton/profile.jpeg",
 
-        photos: []
-    },
+        photos: [
 
+            {
+                src:
+                    "images/brothers/aidan-broughton/golf.jpeg",
 
-    {
-        id: "brother-three",
+                title:
+                    "Golf",
 
-        name: "Brother Three",
+                description:
+                    "I love spending my weekends on the golf course and enjoying the outdoors."
+            },
 
-        year: "Sophomore",
+            {
+                src:
+                    "images/brothers/aidan-broughton/fishing.jpeg",
 
-        major: "Engineering",
+                title:
+                    "Fishing",
 
-        interests: [
-            "Skiing",
-            "Fitness"
-        ],
+                description:
+                    "I love spending my weekends fishing and enjoying the outdoors."
+            }
 
-        categories: [
-            "Outdoors",
-            "Fitness",
-            "Sports"
-        ],
-
-        instagram: "",
-
-        bio: "",
-
-        photo: "",
-
-        photos: []
-    },
-
-
-    {
-        id: "brother-four",
-
-        name: "Brother Four",
-
-        year: "Senior",
-
-        major: "Marketing",
-
-        interests: [
-            "Music",
-            "Golf"
-        ],
-
-        categories: [
-            "Music",
-            "Golf"
-        ],
-
-        instagram: "",
-
-        bio: "",
-
-        photo: "",
-
-        photos: []
+        ]
     }
 
 ];
@@ -187,17 +220,19 @@ function createBrotherCard(brother) {
 
             ${
                 brother.photo
-                    ?
-                    `<img
-                        src="${brother.photo}"
-                        alt="${brother.name}"
-                    >`
 
-                    :
+                    ? `
+                        <img
+                            src="${brother.photo}"
+                            alt="${brother.name}"
+                        >
+                    `
 
-                    `<div class="photo-placeholder">
-                        PHOTO
-                    </div>`
+                    : `
+                        <div class="photo-placeholder">
+                            PHOTO
+                        </div>
+                    `
             }
 
         </div>
@@ -245,7 +280,9 @@ function displayBrothers(
         (brother) => {
 
             grid.appendChild(
-                createBrotherCard(brother)
+                createBrotherCard(
+                    brother
+                )
             );
 
         }
@@ -256,7 +293,7 @@ function displayBrothers(
 
 
 /* ==========================================
-   HOMEPAGE
+   OPTIONAL FEATURED BROTHERS GRID
 ========================================== */
 
 const featuredGrid =
@@ -301,10 +338,19 @@ if (directoryGrid) {
 
 
     const selectedInterest =
-        parameters.get("interest");
+        parameters.get(
+            "interest"
+        );
 
 
-    function filterBrothers(filter) {
+
+    /* ======================================
+       FILTER BROTHERS
+    ====================================== */
+
+    function filterBrothers(
+        filter
+    ) {
 
         if (filter === "All") {
 
@@ -319,15 +365,24 @@ if (directoryGrid) {
 
 
             return;
-
         }
 
 
         const filteredBrothers =
             brothers.filter(
+
                 (brother) =>
-                    brother.categories.includes(filter) ||
-                    brother.interests.includes(filter)
+
+                    brother.categories.includes(
+                        filter
+                    )
+
+                    ||
+
+                    brother.interests.includes(
+                        filter
+                    )
+
             );
 
 
@@ -342,6 +397,11 @@ if (directoryGrid) {
 
     }
 
+
+
+    /* ======================================
+       LOAD FILTER FROM URL
+    ====================================== */
 
     if (selectedInterest) {
 
@@ -360,6 +420,11 @@ if (directoryGrid) {
     }
 
 
+
+    /* ======================================
+       FILTER BUTTONS
+    ====================================== */
+
     const filterButtons =
         document.querySelectorAll(
             ".filter-button"
@@ -369,9 +434,15 @@ if (directoryGrid) {
     filterButtons.forEach(
         (button) => {
 
+
             if (
-                selectedInterest &&
-                button.dataset.filter === selectedInterest
+                selectedInterest
+
+                &&
+
+                button.dataset.filter
+                ===
+                selectedInterest
             ) {
 
                 filterButtons.forEach(
@@ -389,9 +460,11 @@ if (directoryGrid) {
             }
 
 
+
             button.addEventListener(
                 "click",
                 () => {
+
 
                     const filter =
                         button.dataset.filter;
@@ -415,6 +488,7 @@ if (directoryGrid) {
                     );
 
 
+
                     if (
                         filter === "All"
                     ) {
@@ -430,9 +504,13 @@ if (directoryGrid) {
                     else {
 
                         window.history.replaceState(
+
                             {},
+
                             "",
+
                             `brothers.html?interest=${filter}`
+
                         );
 
                     }
@@ -448,7 +526,7 @@ if (directoryGrid) {
 
 
 /* ==========================================
-   PROFILE PAGE
+   BROTHER PROFILE
 ========================================== */
 
 const profileContainer =
@@ -466,15 +544,24 @@ if (profileContainer) {
 
 
     const memberID =
-        parameters.get("member");
+        parameters.get(
+            "member"
+        );
 
 
     const brother =
         brothers.find(
+
             (person) =>
                 person.id === memberID
+
         );
 
+
+
+    /* ======================================
+       BROTHER NOT FOUND
+    ====================================== */
 
     if (!brother) {
 
@@ -485,6 +572,7 @@ if (profileContainer) {
                 <h1>
                     Brother Not Found
                 </h1>
+
 
                 <a
                     href="brothers.html"
@@ -499,10 +587,17 @@ if (profileContainer) {
 
     }
 
+
+
+    /* ======================================
+       DISPLAY PROFILE
+    ====================================== */
+
     else {
 
         document.title =
             `${brother.name} | Beta Theta Pi`;
+
 
 
         const interestTags =
@@ -514,9 +609,11 @@ if (profileContainer) {
                 .join("");
 
 
+
         const gallery =
             brother.photos
                 .map(
+
                     (photo) => `
 
                         <article class="profile-gallery-card">
@@ -526,11 +623,13 @@ if (profileContainer) {
                                 alt="${brother.name} - ${photo.title}"
                             >
 
+
                             <div class="profile-gallery-info">
 
                                 <h3>
                                     ${photo.title}
                                 </h3>
+
 
                                 <p>
                                     ${photo.description}
@@ -541,13 +640,20 @@ if (profileContainer) {
                         </article>
 
                     `
+
                 )
                 .join("");
 
 
+
         profileContainer.innerHTML = `
 
+            <!-- ==================================
+                 PROFILE HERO
+            =================================== -->
+
             <section class="profile-hero">
+
 
                 <div class="profile-main-photo">
 
@@ -557,6 +663,7 @@ if (profileContainer) {
                     >
 
                 </div>
+
 
 
                 <div class="profile-intro">
@@ -572,14 +679,14 @@ if (profileContainer) {
 
 
                     <p class="profile-degree">
-                        ${brother.year}
-                        ·
-                        ${brother.major}
+                        ${brother.year} · ${brother.major}
                     </p>
 
 
                     <div class="profile-tags">
+
                         ${interestTags}
+
                     </div>
 
 
@@ -592,11 +699,17 @@ if (profileContainer) {
 
                 </div>
 
+
             </section>
 
 
 
+            <!-- ==================================
+                 ABOUT
+            =================================== -->
+
             <section class="profile-about">
+
 
                 <div class="profile-about-label">
 
@@ -604,11 +717,13 @@ if (profileContainer) {
                         ABOUT
                     </p>
 
+
                     <h2>
                         More Than a Major.
                     </h2>
 
                 </div>
+
 
 
                 <div class="profile-about-copy">
@@ -619,11 +734,17 @@ if (profileContainer) {
 
                 </div>
 
+
             </section>
 
 
 
+            <!-- ==================================
+                 INTERESTS
+            =================================== -->
+
             <section class="profile-interests">
+
 
                 <div class="section-heading">
 
@@ -631,9 +752,11 @@ if (profileContainer) {
                         INTERESTS
                     </p>
 
+
                     <h2>
                         Outside the Classroom
                     </h2>
+
 
                     <p class="section-description">
                         The things that make each brother
@@ -643,9 +766,13 @@ if (profileContainer) {
                 </div>
 
 
+
                 <div class="profile-gallery">
+
                     ${gallery}
+
                 </div>
+
 
             </section>
 
