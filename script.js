@@ -35,13 +35,13 @@ const brothers = [
             "Whats Good, Im Tristin, You can catch me on the slopes or behind the decks. I Skied my whole life so if you need someone to go to Bogus with, I got you. Im always down to talk about life in the PNW as I grew up in the Seattle area of Washington.",
 
         photo:
-            "images/brothers/tristin watkins/profile.jpeg",
+            "images/brothers/tristin-watkins/profile.jpeg",
 
         photos: [
 
             {
                 src:
-                    "images/brothers/tristin watkins/skiing.jpeg",
+                    "images/brothers/tristin-watkins/skiing.jpeg",
 
                 title:
                     "Skiing",
@@ -52,13 +52,71 @@ const brothers = [
 
             {
                 src:
-                    "images/brothers/tristin watkins/dj.jpeg",
+                    "images/brothers/tristin-watkins/dj.jpeg",
 
                 title:
                     "DJ",
 
                 description:
                     "Music and DJing are a big part of what I enjoy doing both inside and outside of Beta. I remix and produce music in my free time and love to play music for others."
+            }
+
+        ]
+    },
+
+     /* ======================================
+       ASHER PALICKI
+    ====================================== */
+
+    {
+        id: "asher-palicki",
+
+        name: "Asher Palicki",
+
+        year: "Senior (2027)",
+
+        major: "Mechanical Engineering",
+
+        interests: [
+            "Gaming",
+            "Traveling"
+        ],
+
+        categories: [
+            "Gaming",
+            "Traveling"
+        ],
+
+        instagram: "",
+
+        bio:
+            "I became a member of Beta in 2023, I like spending time with the brothers, building, and traveling. Homework is the bain of my existence so I'll mostly be doing that.",
+
+        photo:
+            "images/brothers/asher-palicki/profile.jpg",
+
+        photos: [
+
+            {
+                src:
+                    "images/brothers/asher-palicki/travel.jpeg",
+
+                title:
+                    "Traveling",
+
+                description:
+                    "I love traveling and exploring new places with the brothers. It's a great way to unwind and make memories."
+            },
+
+            {
+                src:
+                    "images/brothers/asher-palicki/brotherhood.jpeg",
+
+                title:
+                    "Brotherhood",
+
+                description:
+                    "I love being part of the brotherhood and building strong relationships with the guys here in this fraternity."
             }
 
         ]
@@ -143,7 +201,7 @@ const brothers = [
         ],
 
         categories: [
-            "Golf",
+            "Sports",
             "Outdoors"
         ],
 
